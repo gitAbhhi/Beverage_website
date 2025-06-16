@@ -99,6 +99,8 @@ h2{
     font-family: 'Times New Roman', Times, serif;
     padding: 5px;
     font-size: 18px;
+    color: black;
+    outline: none;
 }
 .contact textarea{
     width: 400px;
@@ -107,6 +109,8 @@ h2{
     padding: 5px;
     font-size: 18px;
     overflow-y: scroll;
+    color: black;
+    outline: none;
 }
 .input-group{
     margin: 30px;
@@ -119,5 +123,11 @@ h2{
     font-size: 20px;
     align-self: center;
     margin-left:30px ;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+}
+.footer-content{
+    margin: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.644);
 }
