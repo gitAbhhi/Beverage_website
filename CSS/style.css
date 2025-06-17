@@ -1,23 +1,27 @@
-*{
+* {
     margin: 0px;
     color: rgba(255, 255, 255, 0.888);
 }
-body{
+
+body {
     background-color: black;
 }
-.header-hero{
-background-image: url(../images/heroing.png);
-height: 65vh;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+
+.header-hero {
+    background-image: url(../images/heroing.png);
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-.overlay{
-    background-color: rgba(0, 0, 0, 0.301); 
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.301);
     width: 100%;
     height: 100%;
 }
-header{
+
+header {
     text-align: center;
     padding: 16px;
     font-family: sans-serif;
@@ -26,39 +30,45 @@ header{
     color: white;
     letter-spacing: 3px;
 }
-.hero{
+
+.hero {
     font-size: 40px;
-    color: white;   
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-p{
-    padding-top: 100px;
-    padding-inline: 300px;
+
+.hero-p {
+    padding-top: 50px;
+    padding-inline: 200px;
 }
-.content{
+
+.content {
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-h2{
+
+h2 {
     letter-spacing: 2px;
     margin: 50px;
-    font-weight:50;
+    font-weight: 50;
     font-size: 45px;
     text-align: center;
 }
-.display-drinks{
-   
+
+.display-drinks {
+
     display: grid;
-    grid-template-columns: 1fr 1fr  1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-.drink{
+
+.drink {
     width: 300px;
     height: 400px;
     background-color: white;
@@ -67,33 +77,38 @@ h2{
     align-items: center;
     justify-content: center;
 }
-.drink img{
+
+.drink img {
     width: 300px;
     height: 300px;
     object-fit: contain;
     object-position: center;
 }
-.drinkName{
+
+.drinkName {
     font-size: 24px;
     padding: 10px;
     color: black;
 }
-.description{
+
+.description {
     font-size: 20px;
     padding: 10px;
     color: black;
 }
-.contact{
+
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contact label{
+.contact label {
     font-size: 24px;
 }
-.contact input{
+
+.contact input {
     width: 400px;
     height: 30px;
     font-family: 'Times New Roman', Times, serif;
@@ -102,7 +117,8 @@ h2{
     color: black;
     outline: none;
 }
-.contact textarea{
+
+.contact textarea {
     width: 400px;
     height: 150px;
     font-family: 'Times New Roman', Times, serif;
@@ -112,22 +128,114 @@ h2{
     color: black;
     outline: none;
 }
-.input-group{
+
+.input-group {
     margin: 30px;
 }
-.submit-btn{
+
+.submit-btn {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     width: 150px;
     height: 30px;
     font-size: 20px;
     align-self: center;
-    margin-left:30px ;
+    margin-left: 30px;
     /* margin-bottom: 50px; */
 }
-.footer-content{
+
+.footer-content {
     margin: 40px;
     text-align: center;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.644);
 }
+
+/* @media screen and  (max-width:750px) {
+    .hero{
+    font-size: 4vw;
+
+    }
+    .hero-p{
+        padding: 5vw;
+        padding-inline: 50px;
+    }
+} */
+@media screen and (max-width: 768px) {
+    .hero-p {
+      padding-inline: 100px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .header-hero{
+        height: 50vh;
+    }
+  
+    .display-drinks {
+      grid-template-columns: 1fr 1fr; /* 2 columns */
+    }
+  
+    .contact input,
+    .contact textarea {
+      width: 300px;
+    }
+  }
+  
+  /* Phones (width ≤ 480px) */
+  @media screen and (max-width: 480px) {
+    header {
+      font-size: 20px;
+      padding: 10px;
+    }
+    .header-hero{
+        height: 40vh;
+    }
+  
+    .hero {
+      font-size: 28px;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .hero-p {
+      padding-inline: 20px;
+      padding-top: 40px;
+      font-size: 20px;
+    }
+  
+    .display-drinks {
+      grid-template-columns: 1fr; /* 1 column */
+    }
+  
+    .drink {
+      width:300px ;
+      height: 300px;
+    }
+  
+    .drink img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .contact input,
+    .contact textarea {
+      width: 250px;
+    }
+  
+    .submit-btn {
+      width: 100px;
+      margin-left: 30px;
+    }
+  
+    h2 {
+      font-size: 30px;
+      margin: 30px 10px;
+    }
+  
+    .footer-content {
+      font-size: 14px;
+      margin: 20px 10px;
+    }
+  }
